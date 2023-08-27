@@ -2,13 +2,12 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | WebGL_Test</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1080 height=1920 style="width: 1080px; height: 1920px; background: #231F20"></canvas>
-    <script src="Build/테스트빌드2.loader.js"></script>
+    <script src="Build/3.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/테스트빌드2.data",
-        frameworkUrl: "Build/테스트빌드2.framework.js",
-        codeUrl: "Build/테스트빌드2.wasm",
+        dataUrl: "Build/3.data",
+        frameworkUrl: "Build/3.framework.js",
+        codeUrl: "Build/3.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "WebGL_Test",
